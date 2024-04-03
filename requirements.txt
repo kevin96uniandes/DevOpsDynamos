@@ -6,3 +6,7 @@ marshmallow-sqlalchemy
 psycopg2-binary
 python-dotenv
 requests
+Flask-JWT-Extended
+Flask-JWT
+itsdangerous==2.0.1
+Werkzeug

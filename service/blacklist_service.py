@@ -1,5 +1,4 @@
 from ..models.models import BlackList, BlacklistSchema, db
-
 blacklist_schema = BlacklistSchema()
 
 class BlacklistService():
@@ -17,4 +16,3 @@ class BlacklistService():
     def consultar_by_email(self, email):
         blacklist_item = db.session.query(BlackList).filter_by(email=email).first() 
         return blacklist_schema.dump(blacklist_item)
-
